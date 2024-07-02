@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+
+  background-color: white;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+
+  margin-left: 20px;
+}
+
+.navbar a:hover {
+  color: #2596be;
+}
+
+/* Main Content */
+.main-content {
+  padding: 10px 10%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.text-content h2 {
+  font-size: 2.6vw;
+  width: 100%;
+}
+
+.text-content p {
+  font-size: 1.5vw;
+  width: 100%;
+}
+
+.text-content a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 1.4vw;
+  background-color: #2596be;
+  width: 30%;
+  padding: 2%;
+  border-radius: 15px;
+
+  position: relative;
+  top: 40px;
+
+  transition: 0.3s;
+}
+
+.text-content a:hover {
+  box-shadow: -6px 6px black;
+  scale: 1.05;
+}
+
+.img-content {
+  margin-right: 10%;
+}
+
+.img-content img {
+  width: 180%;
+}
+
+/* Register */
+.register-page {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #2596be;
+}
+
+.register-page form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  height: 80%;
+
+  border: 10px solid white;
+  border-radius: 50px;
+
+  background-color: white;
+  box-shadow: -15px 15px black;
+}
+
+.register-page form > h1 {
+  position: relative;
+  bottom: 10%;
+  font-size: 3vw;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.input input {
+  padding: 1.8%;
+  border-radius: 5px;
+  border-color: black;
+
+  transition: 0.3s;
+}
+
+.input input:hover {
+  scale: 1.02;
+}
+
+.input label {
+  color: black;
+  font-size: larger;
+}
+
+.register-page form > button {
+  padding: 1.7%;
+  width: 20%;
+
+  cursor: pointer;
+  background-color: #2596be;
+  border: #2596be;
+  border-radius: 20px;
+  color: white;
+
+  font-size: 18px;
+
+  transition: 0.5s;
+}
+
+.register-page form > button:hover {
+  transform: scale(1.07);
+  box-shadow: -5px 5px rgb(24, 78, 133);
+}
+
+/* Daftar Member */
+
+.content-data {
+  width: 100%;
+  margin-top: 1%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.content-wrapper {
+  margin-top: 5%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  padding: 5%;
+  border-radius: 20px;
+}
+
+.content-data table,
+th,
+td {
+  border: 2px solid black;
+  padding: 10px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.content-wrapper-2 {
+  width: 100%;
+}
+
+.content-wrapper-2 table {
+  background-color: white;
+  width: 100%;
+}
+
+.container-member {
+  background-color: #2596be;
+  height: 100vh;
+}
+
+/* Halaman create (popup) */
+.popup-wrapper {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2596be;
+}
+
+.popup-box {
+  background-color: whitesmoke;
+  width: 50%;
+  height: 60%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.popup-box img {
+  width: 20%;
+  position: relative;
+  bottom: 10%;
+}
+
+.popup-box p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+
+  width: 70%;
+}
+
+.popup-box a {
+  text-decoration: none;
+  background-color: #2596be;
+  padding: 1.5%;
+  color: white;
+  border-radius: 10px;
+
+  margin-top: 5%;
+  transition: 0.3s;
+}
+
+.popup-box a:hover {
+  scale: 1.05;
+  border: 2px solid black;
+}
+
+/* Halaman Edit */
+.edit-form {
+  height: 100vh;
+  width: 100%;
+  background-color: #2596be;
+
+  display: flex;
+  justify-content: center;
+}
+
+.edit-form-wrapper {
+  background-color: white;
+  width: 60%;
+  margin-top: 2%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.edit-form-wrapper form {
+  margin-top: 10%;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit-form-wrapper button {
+  width: 15%;
+  padding: 1%;
+  background-color: #2596be;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+
+  position: relative;
+  top: 5%;
+
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.edit-form-wrapper button:hover {
+  border: 2px solid black;
+  scale: 1.03;
+  box-shadow: -5px 5px black;
+}
