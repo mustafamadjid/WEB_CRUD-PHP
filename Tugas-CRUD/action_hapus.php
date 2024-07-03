@@ -7,7 +7,7 @@ $query = "delete from daftar_anggota where id_anggota='$id';";
 $result = mysqli_query($koneksi,$query);
 
 if($result){
-    header("Location: index.html");
+    header("Location: member.php");
 }
 
 

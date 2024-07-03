@@ -1,10 +1,11 @@
 <?php 
     
 
-    $nama = $_POST['nama'];
-    $alamat = $_POST['alamat'];
-    $usia = $_POST['usia'];
-    $email = $_POST['email'];
+  
+    $nama = filter_input(INPUT_POST,'nama', FILTER_SANITIZE_SPECIAL_CHARS);
+    $alamat = filter_input(INPUT_POST,'alamat',FILTER_SANITIZE_SPECIAL_CHARS);
+    $usia = filter_input(INPUT_POST,'usia',FILTER_SANITIZE_NUMBER_INT);
+    $email = filter_input(INPUT_POST,'email', FILTER_SANITIZE_EMAIL);
 
     include("koneksi.php");
 
